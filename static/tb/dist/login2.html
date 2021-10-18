@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2046225_3n509zkwkgk.css">
+    <title>慧眼工程</title>
+<!--    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .my-header-title{
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            line-height: 2.5rem;
+            text-align: center;
+        }
+        .my-header{
+            display: flex;
+            justify-content: center;
+            background-color: #091a33;
+            height: 2.5rem;
+            line-height: 2rem;
+            padding: 0 20px;
+            border-bottom: 1px solid #081F4B;
+            letter-spacing: 1px;
+            background: url("./bg-titile.png");
+            background-size: 100%;
+        }
+        body{
+            height: 100%;
+            background: url("./bac.jpg");
+            background-size: cover;
+            position: relative;
+        }
+        .login-content{
+            width: 400px;
+            height: 350px;
+            background: rgba(8, 34, 88, 0.7);
+            border: 1px #1a376e solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: #1b9efc  0px 0px .5rem inset;
+        }
+        .top-left {
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-top: 2px #58DBFF solid;
+            border-left: 2px #58DBFF solid;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            z-index: 4;
+        }
+        .top-right{
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-top: 2px #58DBFF solid;
+            border-right: 2px #58DBFF solid;
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            z-index: 4;
+        }
+        .bottom-left{
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-bottom: 2px #58DBFF solid;
+            border-left: 2px #58DBFF solid;
+            position: absolute;
+            bottom: -2px;
+            left: -2px;
+            z-index: 4;
+        }
+        .bottom-right {
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-bottom: 2px #58DBFF solid;
+            border-right: 2px #58DBFF solid;
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            z-index: 4;
+        }
+        .login-content-header{
+
+        }
+        .login-content-header-title{
+            color: #58DBFF;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 60px;
+            margin-top: 30px;
+        }
+        .let-top-content{
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .let-top-content-text{
+            background: #F3802C;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            width: 80px;
+            height: 20px;
+            line-height: 18px;
+            position: relative;
+            margin-right: 9px;
+            margin-top: 10px;
+        }
+        .let-top-content .iconfont{
+            color: #00A0E9;
+            font-size: 30px;
+        }
+        .let-top-content-text:after{
+            position: absolute;
+            content: '';
+            right: -20px;
+            border: 10px solid #F3802C;
+            border-color: transparent transparent transparent #F3802C;
+            top: 0px;
+        }
+        #kt_login_form{
+            padding: 10px 30px;
+            position: relative;
+            transition: all .5s ease-in-out;
+        }
+        #kt_login_form>div{
+            border-radius: 3px;
+        }
+        .from-content{
+            position: relative;
+            height: 34px;
+            color: white;
+            border: 1px solid #00A0E9;
+            padding: 3px 10px;
+            line-height: 34px;
+            margin-bottom: 30px;
+        }
+        .from-content input{
+            background: none;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 12px;
+            height: 20px;
+            margin-left: 5px;
+            width: calc(100% - 40px);
+        }
+        .from-content .iconfont{
+            color: #00A0E9;
+            font-size: 16px;
+        }
+        .from-btn{
+            margin-top: 30px;
+        }
+        .from-btn button{
+            background: none;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 12px;
+            width: 100%;
+            height: 34px;
+            line-height: 34px;
+            background: #179DFE;
+            cursor: pointer;
+        }
+        ::-webkit-input-placeholder {
+            color: white;
+            font-size: 12px;
+        }
+        .tip{
+            font-size: 12px;
+            color: #58DBFF;
+            margin-top: 100px;
+            text-align: center;
+        }
+        .tip a{
+            font-size: 12px;
+            color: #58DBFF;
+            text-decoration: none;
+        }
+        .form-tips{
+            background: #FAC5C9;
+            width: calc(100% - 80px);
+            opacity: 0;
+            height: 28px;
+            line-height: 28px;
+            color: #F04A58;
+            font-size: 12px;
+            padding: 0 10px;
+            position: absolute;
+            top: -20px;
+            left: 30px ;
+        }
+        .form-tips .iconcuowutishi-warning-kuai{
+            font-size: 12px;
+        }
+        .code-img{
+            width: calc(100% - 80px);
+            position: absolute;
+            left: 40px;
+            top: 80px;
+            text-align: center;
+            transition: all .5s ease-in-out;
+            opacity: 0;
+        }
+        .code-img img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div style="height: 100%" id="main">
+    <div class="my-header">
+        <div class="my-header-title">慧眼工程2.0 基层治理关爱服务系统</div>
+        <div class="user-msg"></div>
+    </div>
+    <div class="login-content">
+        <div class="login-content-header">
+            <div class="login-content-header-title">密码登录</div>
+            <div class="let-top-content">
+               <div class="let-top-content-text">微信登录</div>
+                <div><i class="iconfont icondengluyemiandetubiao_huaban1"></i></div>
+            </div>
+        </div>
+        <form action="/guyee-dolphin/login" novalidate="novalidate" id="kt_login_form" method="post">
+           <div class="form-tips"><span class="iconfont iconcuowutishi-warning-kuai"></span> <span>请输入账号</span></div>
+            <div class="from-content">
+                <span class="iconfont iconzhanghuffffffpx"></span>
+                <input type="text" placeholder="请输入账号">
+            </div>
+            <div class="from-content">
+                <span class="iconfont iconmimaffffffpx"></span>
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <div class="from-btn">
+                <button type="submit" class="btn">登录</button>
+            </div>
+        </form>
+        <div class="code-img">
+           <div><img src="http://sctel-acs.iguyee.cn:8083/guyee-dolphin/eauth/qrcode" id="qrcode"></div>
+            <div style="margin-top: 20px;font-size: 12px; color: #58DBFF;text-align: center">打开微信,扫一扫登录</div>
+        </div>
+        <div class="tip">
+            © 2019 成都同步新创科技股份有限公司   <a href="https://www.baidu.com/link?url=l7pU9jaqCOdinTnC7_vwy5K5mKtkOhiKTXn0Va0y3wxFXvjyKDwW80spzszQbJr-r66LY-GvlpFI2xcnDlMboCdotf8z1EhkPHZd_vgG154wG8CKilp_eEjA76YFlQ5GgQtsYcYtI5Kwt_fpT6_7Yq&wd=&eqid=ae5af8010000ac92000000065f51c795">谷歌浏览器下载</a>
+        </div>
+        <span class="top-left"></span>
+        <span class="top-right"></span>
+        <span class="bottom-left"></span>
+        <span class="bottom-right"></span>
+    </div>
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+<script>
+    (function f() {
+        var main = document.getElementById('main')
+        const deviceHeight = document.documentElement.clientHeight
+        main.style.minHeight = deviceHeight + 'px'
+    })()
+    $('.let-top-content').bind('click', function () {
+        if($('.let-top-content-text').html() == '微信登录'){
+            $('.let-top-content-text').html('账号密码登录')
+            $('#kt_login_form').css({
+                opacity: 0
+            })
+            $('.code-img').css({
+                opacity: 1
+            })
+        }
+        else {
+            $('.let-top-content-text').html('微信登录')
+            $('#kt_login_form').css({
+                opacity: 1
+            })
+            $('.code-img').css({
+                opacity: 0
+            })
+        }
+        if($('.let-top-content>div>i').is('.icondengluyemiandetubiao_huaban1')){
+            $('.let-top-content>div>i').removeClass('icondengluyemiandetubiao_huaban1')
+            $('.let-top-content>div>i').addClass('icondengluyemiandetubiao-03');
+        }
+        else {
+            $('.let-top-content>div>i').removeClass('icondengluyemiandetubiao-03')
+            $('.let-top-content>div>i').addClass('icondengluyemiandetubiao_huaban1');
+        }
+    })
+</script>
+</body>
+</html>

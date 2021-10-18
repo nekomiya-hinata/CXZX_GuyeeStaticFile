@@ -1,0 +1,187 @@
+/* here you can put your own css to customize and override the theme */
+
+.selector .s-brand, .selector .s-line, .selector .s-tow-row {
+	width: auto;
+	height: auto;
+}
+
+.selector {
+	border-top: 1px solid #DDD;
+	background: #FFF;
+	margin-bottom: 10px;
+}
+
+
+.selector label
+{
+	margin-bottom: 5px;	
+}
+
+.selector .s-title {
+	border-bottom: 1px solid #DDD;
+	background: #F1F1F1;
+	line-height: 34px;
+	overflow: hidden;
+	zoom: 1;
+	display: flex;
+}
+
+.selector .s-title h3 {
+	float: left;
+	padding-left: 10px;
+}
+
+.selector .s-title .st-ext {
+	float: left;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+
+.selector .s-title .st-term {
+	flex-grow: 1;
+	padding-right: 20px;
+}
+
+
+.selector .s-title .st-term span {
+	padding: 10px;
+}
+
+.selector .s-brand, .selector .s-line, .selector .s-tow-row {
+	width: auto;
+	height: auto;
+}
+
+.selector .sl-wrap {
+	position: relative;
+	_zoom: 1;
+	line-height: 30px;
+	border-bottom: 1px dashed #ddd;
+}
+
+.selector .sl-key {
+	float: left;
+	padding-left: 10px;
+	color: #999;
+	padding-top: 6px;
+}
+
+.selector .sl-value {
+	margin-left: 110px;
+	padding-right: 130px;
+	padding-left: 10px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.selector .sl-v-list {
+	overflow: hidden;
+	zoom: 1;
+	margin: 0px;
+}
+
+.selector .sl-v-list ul {
+	float: left;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+	height: 35px;
+	margin: 5px 0px;;
+}
+
+.extend .sl-v-list ul {
+	float: left;
+	overflow: hidden;
+	zoom: 1;
+	position: relative;
+	height: auto;
+}
+
+.selector .sl-v-list li {
+	list-style: none;
+	float: left;
+	_display: inline;
+	margin-right: 16px;
+	line-height: 26px;
+	margin-bottom: 6px;
+}
+
+.selector .sl-v-list li a {
+	min-width: 45px;
+}
+
+.selector .sl-v-list li .active {
+	color: #FFF;
+	background-color: #32c5d2;
+	border-color: #32c5d2;
+}
+
+.selector .sl-ext {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 120px;
+	height: auto;
+	line-height: 22px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.selector .sl-ext .sl-e-more {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	width: 50px;
+	height: 22px;
+	background: #fff;
+	visibility: hidden;
+	font-size: 13px;
+	color: #333;
+}
+
+.selector .sl-ext .sl-e-more i {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #DDD;
+}
+
+.selector .sl-ext .sl-e-more:hover {
+	text-decoration: none;
+	color: #e4393c;
+}
+
+.selector .sl-ext .sl-e-more i:hover {
+	border: 1px solid #e4393c;
+	color: #e4393c;
+}
+
+.selector .s-more {
+	text-align: center;
+	position: relative;
+	top: -1px;
+	border-top: 1px solid #ddd;
+	transition: border-color .15s ease-in-out;
+}
+
+.selector .s-more .sm-wrap {
+	position: relative;
+	display: inline-block;
+	margin-top: -1px;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 40px 0 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FFF #DDD #DDD;
+	background: #f7f9fb;
+	cursor: pointer;
+	color: #333;
+	transition: border-color .15s ease-in-out;
+}
+
