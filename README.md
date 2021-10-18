@@ -1,0 +1,2 @@
+# CXZX_GuyeeStaticFile
+创新中心Guyee项目CDN文件
