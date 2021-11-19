@@ -1,0 +1,195 @@
+.history-container[data-v-1dcd8092] {
+  margin: 0 0.125rem;
+}
+.history-container .tabs > div[data-v-1dcd8092] {
+  display: flex;
+}
+.history-container .tabs > div .tab-tilte[data-v-1dcd8092] {
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+  height: 80px;
+}
+.history-container .tabs > div .tab-tilte.active[data-v-1dcd8092] {
+  background: linear-gradient(to right, #1b81bc, 20%, #24c4ff);
+  color: #fff;
+}
+.history-container .tabs > div .indicatorDots[data-v-1dcd8092] {
+  background-color: rgba(36, 196, 255, 0.5);
+  width: 1px;
+  margin: 0px 0 0 14px;
+}
+.history-container .tabs > div .indicatorDots span[data-v-1dcd8092] {
+  display: block;
+  margin-left: -5px;
+}
+.history-container .tabs > div .indicatorDots span[data-v-1dcd8092]:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  border: 1px solid #1b81bc;
+}
+.history-container .tabs > div .indicatorDots span.active[data-v-1dcd8092]:after {
+  background: #24c4ff;
+  box-shadow: 0 0 0.125rem #1b81bc;
+}
+.history-container .tabs > div .indicatorDots span[data-v-1dcd8092]:last-child {
+  height: 6px;
+}
+.history-container .tabs > div .tab-content div[data-v-1dcd8092] {
+  margin-left: 14px;
+  color: #000;
+}
+.history-container .tabs > div .tab-content div .content[data-v-1dcd8092] {
+  line-height: 25px;
+  padding: 2px 0;
+}
+.history-container .tabs > div .tab-content div.active[data-v-1dcd8092] {
+  background: linear-gradient(to right, #1b81bc, 20%, #24c4ff);
+  color: #fff;
+}
+.history-container .tabs > div:last-child .indicatorDots[data-v-1dcd8092] {
+  height: 6px;
+}
+
+.active[data-v-2b6b3522],
+.rotateline[data-v-2b6b3522] {
+  color: #179dfe !important;
+}
+[data-v-2b6b3522] .el-card__body {
+  padding: 0;
+}
+[data-v-2b6b3522] .el-card__body .title {
+  height: 37px;
+  line-height: 37px;
+  border-bottom: 1px solid #D8D8D8;
+  padding-left: 23px;
+  font-weight: bold;
+  color: #333333;
+}
+[data-v-2b6b3522] .el-card__body .title span {
+  margin-right: 10px;
+  padding: 3px 4px;
+  color: #fff;
+}
+[data-v-2b6b3522] .el-card__body .details {
+  margin: 20px 0 0 20px;
+  border-bottom: 1px solid #D8D8D8;
+}
+[data-v-2b6b3522] .el-card__body .details div {
+  margin-right: 8%;
+}
+[data-v-2b6b3522] .el-card__body .details div p {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 7px;
+}
+[data-v-2b6b3522] .el-card__body .details div p i {
+  font-size: 20px;
+  color: #179dfe;
+  vertical-align: bottom;
+}
+[data-v-2b6b3522] .el-card__body .content {
+  margin-left: 20px;
+  position: relative;
+}
+[data-v-2b6b3522] .el-card__body .content > p {
+  line-height: 40px;
+}
+[data-v-2b6b3522] .el-card__body .content .tool {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+[data-v-2b6b3522] .el-card__body .content .tool span {
+  cursor: pointer;
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  padding: 2px 3px;
+}
+[data-v-2b6b3522] .el-card__body .content .tool span .iconfont {
+  font-size: 18px;
+  color: #d8d8d8;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background: #FFFFFF;
+  width: 340px;
+  height: calc(100vh - 246px);
+  box-shadow: -6px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails > p {
+  line-height: 35px;
+  border-bottom: 1px solid #D8D8D8;
+  padding-left: 20px;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right {
+  margin-left: 23px;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .personInfo {
+  border-bottom: 1px solid #D8D8D8;
+  margin: 20px 0 5px 0;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .personInfo img {
+  width: 69px;
+  height: 79px;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .personInfo > div {
+  margin-left: 12px;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .personInfo > div div p:nth-child(1) {
+  font-weight: bold;
+  color: #333333;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .personInfo > div div p:not(:nth-child(1)) {
+  color: #179DFE;
+  background: rgba(23, 157, 254, 0.2);
+  border-radius: 2px;
+  padding: 3px 4px;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .personInfo > div .time {
+  color: #999999;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .waringScene img {
+  width: 120px;
+  height: 66px;
+}
+[data-v-2b6b3522] .el-card__body .content .travelDetails .itemDetails .right .relationVideo div p:last-child {
+  color: #179DFE;
+}
+[data-v-2b6b3522] .el-card__body .buttom {
+  background: #FFFFFF;
+  border-radius: 2px;
+  line-height: 44px;
+  height: 44px;
+}
+[data-v-2b6b3522] .el-card__body .buttom button {
+  float: right;
+  height: 32px;
+  width: 151px;
+  background: #179DFE;
+  border-radius: 2px;
+  border: 1px solid #179DFE;
+  margin: 6px 41px;
+  color: #FFFFFF;
+}
+#map[data-v-2b6b3522],
+#atlas[data-v-2b6b3522] {
+  width: calc(100% - 340px);
+  height: calc(100vh - 246px);
+  border: 1px solid #E5E5E5;
+  transform: translate3d(0, 0, 0);
+  background: #F6F6F6;
+}
+[data-v-2b6b3522] .BMap_cpyCtrl {
+  display: none;
+}
+[data-v-2b6b3522] .anchorBL {
+  display: none;
+}
+

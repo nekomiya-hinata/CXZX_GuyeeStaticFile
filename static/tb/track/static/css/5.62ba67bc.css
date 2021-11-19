@@ -1,0 +1,38 @@
+/**
+  变量
+**/
+/**
+  搜索区域样式
+**/
+.seachCondition[data-v-2c4ff577] {
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  border-radius: 6px;
+  padding: 20px;
+  min-width: 200px;
+}
+.seachCondition .detail p[data-v-2c4ff577]:not(:first-child) {
+  line-height: 40px;
+}
+.seachCondition .detail p:not(:first-child) span[data-v-2c4ff577] {
+  color: red;
+}
+.seachCondition .seach .el-row[data-v-2c4ff577] {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.seachCondition .panel[data-v-2c4ff577] {
+  margin: auto;
+  width: 140px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6699ff;
+  line-height: 20px;
+}
+.index-container[data-v-2c4ff577] {
+  color: #212529;
+}
+.index-container .el-pagination[data-v-2c4ff577] {
+  text-align: right;
+}
+
