@@ -203,7 +203,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://cdn.jsdelivr.net/gh/nekomiya-hinata/CXZX_GuyeeStaticFile@v1.1.1/static/tb/track/";
+/******/ 	__webpack_require__.p = "https://cdn.jsdelivr.net/gh/nekomiya-hinata/CXZX_GuyeeStaticFile@v1.1.2/static/tb/track/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
